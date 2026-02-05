@@ -1,0 +1,55 @@
+
+==============Database==========
+1. MySQL
+2. SQLite
+3. MongoDB
+4. PostgressSql
+
+===========SQL=========
+S = Structured
+Q = Query
+L = Language
+
+
+CRUD = Create Read Update Delete
+
+Database (school_mgt_system_20)
+ 1. students (name, roll, class, address, phone, blood, image, email)
+ 2. teachers (name, phone, designation, address, email)
+ 3. staffs (name, phone, designation, address, email)
+
+ text format => 
+
+ 1
+ 2
+ 3
+ 4
+ .
+ .
+ .
+ 87456783456213653258745 (Big Integre)
+
+ six 6
+
+
+ Create==>
+
+ INSERT INTO students (name, roll, class, address, blood, image , phone, email) VALUES ('Rafiq', 4, 'Ten', 'Dhaka, Bangladesh', 'A-', 'test.png', '093890393', 'example@gmail.com')
+
+ Read===>
+
+ SELECT * FROM students;
+ SELECT id,name,email FROM students;
+ SELECT * FROM students WHERE name='Rahim';
+ SELECT * FROM students WHERE blood='O+';
+ SELECT * FROM students WHERE roll=1;
+ SELECT * FROM students WHERE id=1;
+
+ Update=====>
+
+ UPDATE students SET roll=2, class='seven' WHERE id=1;
+
+ Delete=====>
+
+ DELETE FROM students;
+ DELETE FROM students WHERE id=1;
